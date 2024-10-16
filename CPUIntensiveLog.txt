@@ -1,0 +1,132 @@
+0: Sim Started With Time Quantum of 3
+
+0: No Event
+1: No Event
+2: No Event
+3: P0 Arrives - Enters Ready Queue
+3: P0 Dispatched To CPU, Burst = 2
+4: No Event
+CPU = P0, Burst = 2
+IO  = null
+Ready Q: {  }
+IO    Q: {  }
+5: P1 Arrives - Enters Ready Queue
+5: P0 IO Blocked
+5: P1 Dispatched To CPU, Burst = 4
+5: P0 Dispatched To IO, Burst = 5
+6: P2 Arrives - Enters Ready Queue
+7: No Event
+8: P1 Preempted - Moved to Ready Queue
+8: P2 Dispatched To CPU, Burst = 8
+9: No Event
+CPU = P2, Burst = 8
+IO  = P0, Burst = 5
+Ready Q: { P1 }
+IO    Q: {  }
+10: P0 IO Done
+11: P2 Preempted - Moved to Ready Queue
+11: P1 Dispatched To CPU, Burst = 1
+12: P1 Terminated
+12: P0 Dispatched To CPU, Burst = 8
+13: No Event
+14: No Event
+CPU = P0, Burst = 8
+IO  = null
+Ready Q: { P2 }
+IO    Q: {  }
+15: P0 Preempted - Moved to Ready Queue
+15: P2 Dispatched To CPU, Burst = 5
+16: No Event
+17: No Event
+18: P2 Preempted - Moved to Ready Queue
+18: P0 Dispatched To CPU, Burst = 5
+19: No Event
+CPU = P0, Burst = 5
+IO  = null
+Ready Q: { P2 }
+IO    Q: {  }
+20: No Event
+21: P0 Preempted - Moved to Ready Queue
+21: P2 Dispatched To CPU, Burst = 2
+22: No Event
+23: P2 IO Blocked
+23: P0 Dispatched To CPU, Burst = 2
+23: P2 Dispatched To IO, Burst = 2
+24: No Event
+CPU = P0, Burst = 2
+IO  = P2, Burst = 2
+Ready Q: {  }
+IO    Q: {  }
+25: P2 IO Done
+25: P0 IO Blocked
+25: P2 Dispatched To CPU, Burst = 10
+25: P0 Dispatched To IO, Burst = 7
+26: No Event
+27: No Event
+28: P2 Preempted - Moved to Ready Queue
+28: P2 Dispatched To CPU, Burst = 7
+29: No Event
+CPU = P2, Burst = 7
+IO  = P0, Burst = 7
+Ready Q: {  }
+IO    Q: {  }
+30: No Event
+31: P2 Preempted - Moved to Ready Queue
+31: P2 Dispatched To CPU, Burst = 4
+32: P0 IO Done
+33: No Event
+34: P2 Preempted - Moved to Ready Queue
+34: P0 Dispatched To CPU, Burst = 4
+CPU = P0, Burst = 4
+IO  = null
+Ready Q: { P2 }
+IO    Q: {  }
+35: No Event
+36: No Event
+37: P0 Preempted - Moved to Ready Queue
+37: P2 Dispatched To CPU, Burst = 1
+38: P2 IO Blocked
+38: P0 Dispatched To CPU, Burst = 1
+38: P2 Dispatched To IO, Burst = 2
+39: P0 Terminated
+CPU = NULL
+IO  = P2, Burst = 2
+Ready Q: {  }
+IO    Q: {  }
+40: P2 IO Done
+40: P2 Dispatched To CPU, Burst = 7
+41: No Event
+42: No Event
+43: P2 Preempted - Moved to Ready Queue
+43: P2 Dispatched To CPU, Burst = 4
+44: No Event
+CPU = P2, Burst = 4
+IO  = null
+Ready Q: {  }
+IO    Q: {  }
+45: No Event
+46: P2 Preempted - Moved to Ready Queue
+46: P2 Dispatched To CPU, Burst = 1
+47: P2 IO Blocked
+47: P2 Dispatched To IO, Burst = 5
+48: No Event
+49: No Event
+CPU = NULL
+IO  = P2, Burst = 5
+Ready Q: {  }
+IO    Q: {  }
+50: No Event
+51: No Event
+52: P2 IO Done
+52: P2 Dispatched To CPU, Burst = 6
+53: No Event
+54: No Event
+CPU = P2, Burst = 6
+IO  = null
+Ready Q: {  }
+IO    Q: {  }
+55: P2 Preempted - Moved to Ready Queue
+55: P2 Dispatched To CPU, Burst = 3
+56: No Event
+57: No Event
+58: P2 Terminated

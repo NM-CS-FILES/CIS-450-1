@@ -1,0 +1,104 @@
+0: Sim Started With Time Quantum of 2
+
+3: P0 Arrives - Enters Ready Queue
+3: P0 Dispatched To CPU, Burst = 2
+CPU = P0, Burst = 2
+IO  = null
+Ready Q: {  }
+IO    Q: {  }
+5: P1 Arrives - Enters Ready Queue
+5: P0 IO Blocked
+5: P1 Dispatched To CPU, Burst = 1
+5: P0 Dispatched To IO, Burst = 5
+6: P2 Arrives - Enters Ready Queue
+6: P1 IO Blocked
+6: P2 Dispatched To CPU, Burst = 1
+7: P2 IO Blocked
+CPU = NULL
+IO  = P0, Burst = 5
+Ready Q: {  }
+IO    Q: { P1, P2 }
+10: P0 IO Done
+10: P0 Dispatched To CPU, Burst = 2
+10: P1 Dispatched To IO, Burst = 10
+12: P0 IO Blocked
+CPU = NULL
+IO  = P1, Burst = 10
+Ready Q: {  }
+IO    Q: { P2, P0 }
+CPU = NULL
+IO  = P1, Burst = 10
+Ready Q: {  }
+IO    Q: { P2, P0 }
+20: P1 IO Done
+20: P1 Dispatched To CPU, Burst = 2
+20: P2 Dispatched To IO, Burst = 15
+22: P1 Terminated
+CPU = NULL
+IO  = P2, Burst = 15
+Ready Q: {  }
+IO    Q: { P0 }
+CPU = NULL
+IO  = P2, Burst = 15
+Ready Q: {  }
+IO    Q: { P0 }
+CPU = NULL
+IO  = P2, Burst = 15
+Ready Q: {  }
+IO    Q: { P0 }
+35: P2 IO Done
+35: P2 Dispatched To CPU, Burst = 1
+35: P0 Dispatched To IO, Burst = 7
+36: P2 IO Blocked
+CPU = NULL
+IO  = P0, Burst = 7
+Ready Q: {  }
+IO    Q: { P2 }
+42: P0 IO Done
+42: P0 Dispatched To CPU, Burst = 4
+42: P2 Dispatched To IO, Burst = 12
+44: P0 Preempted - Moved to Ready Queue
+44: P0 Dispatched To CPU, Burst = 2
+CPU = P0, Burst = 2
+IO  = P2, Burst = 12
+Ready Q: {  }
+IO    Q: {  }
+46: P0 Terminated
+CPU = NULL
+IO  = P2, Burst = 12
+Ready Q: {  }
+IO    Q: {  }
+54: P2 IO Done
+54: P2 Dispatched To CPU, Burst = 4
+CPU = P2, Burst = 4
+IO  = null
+Ready Q: {  }
+IO    Q: {  }
+56: P2 Preempted - Moved to Ready Queue
+56: P2 Dispatched To CPU, Burst = 2
+58: P2 IO Blocked
+58: P2 Dispatched To IO, Burst = 8
+CPU = NULL
+IO  = P2, Burst = 8
+Ready Q: {  }
+IO    Q: {  }
+CPU = NULL
+IO  = P2, Burst = 8
+Ready Q: {  }
+IO    Q: {  }
+66: P2 IO Done
+66: P2 Dispatched To CPU, Burst = 6
+68: P2 Preempted - Moved to Ready Queue
+68: P2 Dispatched To CPU, Burst = 4
+CPU = P2, Burst = 4
+IO  = null
+Ready Q: {  }
+IO    Q: {  }
+70: P2 Preempted - Moved to Ready Queue
+70: P2 Dispatched To CPU, Burst = 2
+72: P2 Terminated
+CPU Utilization: 31.5068
+P0 (TAT =   43 | Ready =    0 | IO =   23)
+P1 (TAT =   17 | Ready =    0 | IO =    4)
+P2 (TAT =   66 | Ready =    0 | IO =   19)
+Average, TOT = 42.000000, IO = 15.333333, READY = 0.000000

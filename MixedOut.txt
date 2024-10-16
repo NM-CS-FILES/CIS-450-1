@@ -1,0 +1,190 @@
+0: Sim Started With Time Quantum of 2
+
+3: P0 Arrives - Enters Ready Queue
+3: P0 Dispatched To CPU, Burst = 2
+4: P1 Arrives - Enters Ready Queue
+CPU = P0, Burst = 2
+IO  = null
+Ready Q: { P1 }
+IO    Q: {  }
+5: P0 IO Blocked
+5: P1 Dispatched To CPU, Burst = 4
+5: P0 Dispatched To IO, Burst = 5
+6: P2 Arrives - Enters Ready Queue
+7: P1 Preempted - Moved to Ready Queue
+7: P2 Dispatched To CPU, Burst = 2
+8: P3 Arrives - Enters Ready Queue
+9: P2 IO Blocked
+9: P1 Dispatched To CPU, Burst = 2
+CPU = P1, Burst = 2
+IO  = P0, Burst = 5
+Ready Q: { P3 }
+IO    Q: { P2 }
+10: P4 Arrives - Enters Ready Queue
+10: P0 IO Done
+10: P2 Dispatched To IO, Burst = 5
+11: P1 Terminated
+11: P3 Dispatched To CPU, Burst = 8
+13: P5 Arrives - Enters Ready Queue
+13: P3 Preempted - Moved to Ready Queue
+13: P4 Dispatched To CPU, Burst = 1
+14: P4 IO Blocked
+14: P0 Dispatched To CPU, Burst = 8
+CPU = P0, Burst = 8
+IO  = P2, Burst = 5
+Ready Q: { P5, P3 }
+IO    Q: { P4 }
+15: P2 IO Done
+15: P4 Dispatched To IO, Burst = 10
+16: P0 Preempted - Moved to Ready Queue
+16: P5 Dispatched To CPU, Burst = 1
+17: P5 IO Blocked
+17: P3 Dispatched To CPU, Burst = 6
+19: P3 Preempted - Moved to Ready Queue
+19: P2 Dispatched To CPU, Burst = 2
+CPU = P2, Burst = 2
+IO  = P4, Burst = 10
+Ready Q: { P0, P3 }
+IO    Q: { P5 }
+21: P2 IO Blocked
+21: P0 Dispatched To CPU, Burst = 6
+23: P0 Preempted - Moved to Ready Queue
+23: P3 Dispatched To CPU, Burst = 4
+CPU = P3, Burst = 4
+IO  = P4, Burst = 10
+Ready Q: { P0 }
+IO    Q: { P5, P2 }
+25: P4 IO Done
+25: P3 Preempted - Moved to Ready Queue
+25: P0 Dispatched To CPU, Burst = 4
+25: P5 Dispatched To IO, Burst = 15
+27: P0 Preempted - Moved to Ready Queue
+27: P4 Dispatched To CPU, Burst = 2
+29: P4 Terminated
+29: P3 Dispatched To CPU, Burst = 2
+CPU = P3, Burst = 2
+IO  = P5, Burst = 15
+Ready Q: { P0 }
+IO    Q: { P2 }
+31: P3 IO Blocked
+31: P0 Dispatched To CPU, Burst = 2
+33: P0 IO Blocked
+CPU = NULL
+IO  = P5, Burst = 15
+Ready Q: {  }
+IO    Q: { P2, P3, P0 }
+CPU = NULL
+IO  = P5, Burst = 15
+Ready Q: {  }
+IO    Q: { P2, P3, P0 }
+40: P5 IO Done
+40: P5 Dispatched To CPU, Burst = 1
+40: P2 Dispatched To IO, Burst = 7
+41: P5 IO Blocked
+CPU = NULL
+IO  = P2, Burst = 7
+Ready Q: {  }
+IO    Q: { P3, P0, P5 }
+47: P2 IO Done
+47: P2 Dispatched To CPU, Burst = 4
+47: P3 Dispatched To IO, Burst = 2
+49: P3 IO Done
+49: P2 Preempted - Moved to Ready Queue
+49: P3 Dispatched To CPU, Burst = 10
+49: P0 Dispatched To IO, Burst = 7
+CPU = P3, Burst = 10
+IO  = P0, Burst = 7
+Ready Q: { P2 }
+IO    Q: { P5 }
+51: P3 Preempted - Moved to Ready Queue
+51: P2 Dispatched To CPU, Burst = 2
+53: P2 Terminated
+53: P3 Dispatched To CPU, Burst = 8
+CPU = P3, Burst = 8
+IO  = P0, Burst = 7
+Ready Q: {  }
+IO    Q: { P5 }
+55: P3 Preempted - Moved to Ready Queue
+55: P3 Dispatched To CPU, Burst = 6
+56: P0 IO Done
+56: P5 Dispatched To IO, Burst = 12
+57: P3 Preempted - Moved to Ready Queue
+57: P0 Dispatched To CPU, Burst = 4
+59: P0 Preempted - Moved to Ready Queue
+59: P3 Dispatched To CPU, Burst = 4
+CPU = P3, Burst = 4
+IO  = P5, Burst = 12
+Ready Q: { P0 }
+IO    Q: {  }
+61: P3 Preempted - Moved to Ready Queue
+61: P0 Dispatched To CPU, Burst = 2
+63: P0 Terminated
+63: P3 Dispatched To CPU, Burst = 2
+CPU = P3, Burst = 2
+IO  = P5, Burst = 12
+Ready Q: {  }
+IO    Q: {  }
+65: P3 IO Blocked
+68: P5 IO Done
+68: P5 Dispatched To CPU, Burst = 4
+68: P3 Dispatched To IO, Burst = 2
+CPU = P5, Burst = 4
+IO  = P3, Burst = 2
+Ready Q: {  }
+IO    Q: {  }
+70: P3 IO Done
+70: P5 Preempted - Moved to Ready Queue
+70: P3 Dispatched To CPU, Burst = 7
+72: P3 Preempted - Moved to Ready Queue
+72: P5 Dispatched To CPU, Burst = 2
+74: P5 IO Blocked
+74: P3 Dispatched To CPU, Burst = 5
+74: P5 Dispatched To IO, Burst = 8
+CPU = P3, Burst = 5
+IO  = P5, Burst = 8
+Ready Q: {  }
+IO    Q: {  }
+76: P3 Preempted - Moved to Ready Queue
+76: P3 Dispatched To CPU, Burst = 3
+78: P3 Preempted - Moved to Ready Queue
+78: P3 Dispatched To CPU, Burst = 1
+79: P3 IO Blocked
+CPU = NULL
+IO  = P5, Burst = 8
+Ready Q: {  }
+IO    Q: { P3 }
+82: P5 IO Done
+82: P5 Dispatched To CPU, Burst = 6
+82: P3 Dispatched To IO, Burst = 5
+84: P5 Preempted - Moved to Ready Queue
+84: P5 Dispatched To CPU, Burst = 4
+CPU = P5, Burst = 4
+IO  = P3, Burst = 5
+Ready Q: {  }
+IO    Q: {  }
+86: P5 Preempted - Moved to Ready Queue
+86: P5 Dispatched To CPU, Burst = 2
+87: P3 IO Done
+88: P5 Terminated
+88: P3 Dispatched To CPU, Burst = 6
+CPU = P3, Burst = 6
+IO  = null
+Ready Q: {  }
+IO    Q: {  }
+90: P3 Preempted - Moved to Ready Queue
+90: P3 Dispatched To CPU, Burst = 4
+92: P3 Preempted - Moved to Ready Queue
+92: P3 Dispatched To CPU, Burst = 2
+94: P3 Terminated
+CPU = NULL
+IO  = null
+Ready Q: {  }
+IO    Q: {  }
+CPU Utilization: 75.7895
+P0 (TAT =   60 | Ready =   18 | IO =   16)
+P1 (TAT =    7 | Ready =    3 | IO =    0)
+P2 (TAT =   47 | Ready =    7 | IO =   20)
+P3 (TAT =   86 | Ready =   24 | IO =   22)
+P4 (TAT =   19 | Ready =    5 | IO =    1)
+P5 (TAT =   75 | Ready =    5 | IO =   23)
+Average, TOT = 49.000000, IO = 13.666667, READY = 10.333333
